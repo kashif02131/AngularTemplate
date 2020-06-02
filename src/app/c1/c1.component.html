@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <h1>Component 1</h1>
+
+  <app-c2 [receivedParentMessage]="messageToSendP"> ></app-c2>
+  <app-c2 (valueChange)="displayCounter($event)"> ></app-c2>
+
+  {{ receivedChildMessage }}
+</div>
